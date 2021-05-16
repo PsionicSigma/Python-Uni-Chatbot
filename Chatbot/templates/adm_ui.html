@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/style.css?version=9">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    </head>
+    <body style="background-image: url('static/img/pagalba_vgtu_fonui.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <div class="chatbotWindow">
+            <div id="chatBox">
+            </div>
+            <div id="userBox">
+                <input id="textBoxInput" class="form-control" type="text" name="msg" placeholder="Tekstas">
+                <input id="buttonSendInput" class="btn btn-success form-control" type="submit" value="Siūsti">
+                <!-- class="sendButton" class="btn btn-success form-control" -->
+            </div>
+        </div>
+        <script type="text/javascript">
+            var socket = io.connect('http://127.0.0.1:5000/adm');
+        
+            socket.on('connect', function (message) {
+                socket.emit('adm_join', '0');
+            })
+
+            socket.on('user_connected', function (name) {
+                let textHtml = '<p>Vartotojas '+name+' prašo pagalbos</p>';
+                $("#chatBox").append(textHtml);
+                document.getElementById('chatBox').scrollIntoView(false) //{block: 'start', behavior: 'smooth'}
+            })
+
+            socket.on('user_disconnected', function (name) {
+                let textHtml = '<p>Vartotojas '+name+' atsijungė</p>';
+                $("#chatBox").append(textHtml);
+                document.getElementById('chatBox').scrollIntoView(false)
+            })
+
+            socket.on('user_say', function (message) {
+                let userTextHtml = '<p class="userText" style="text-align: left;"><span>' + message + '</span></p>';
+                $("#chatBox").append(userTextHtml);
+                document.getElementById('chatBox').scrollIntoView(false)
+            })
+
+            function sendMessage() {
+                let admText = $("#textBoxInput").val();
+                let admTextHtml = '<p class="admText"><span>' + admText + '</span></p>';
+                $("#textBoxInput").val("");
+                socket.emit('adm_say', admText);
+                $("#chatBox").append(admTextHtml);
+                document.getElementById('chatBox').scrollIntoView(false);
+            }
+
+            $("#textBoxInput").keypress(function(e) {
+                 if(e.which == 13 && $("#textBoxInput").val()!="") {
+                    sendMessage();
+                }
+            });
+
+            $("#buttonSendInput").click(function() {
+                if($("#textBoxInput").val()!="") {
+                    sendMessage();
+                }
+            });
+
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>

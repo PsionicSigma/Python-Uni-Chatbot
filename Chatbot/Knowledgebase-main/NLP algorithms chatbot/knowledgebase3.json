@@ -1,0 +1,43 @@
+{ "intents":[
+        {"tag": "darbas",
+        "uzklausos": ["ar vgtu yra darbo pasiulymai", "kur rasti darbo pasiulimus", "kur rasti darbo skelbimus", "ar galima rasti darba per vgtu", "kokios karjeros galimybes siulo vgtu", "kur rasti darbo skelbimus", "koki darba siulo vgtu", "kokie yra darbo skelbimai siuo metu", "kur rasti darbo skelbimui studentams", "kur perziureti darbo pasiulimus studentams", "kur isidarbinti studentui"],
+        "atsakymas": ["Darbo pasiūlimus rasite „Mano karjera > Darbo pasiūlymai“ skiltyje arba https://mano.vgtu.lt/mycareer/jobs"]
+        },
+        {"tag": "praktika",
+        "uzklausos": ["ar vgtu turi praktikos pasiulymu", "kur rasti praktikos pasiulimus", "kur atlikti praktika", "kokia praktika siulo vgtu", "kur vgtu siulo atlikti praktika", "kokios praktikos galimybes"],
+        "atsakymas": ["Praktikos pasiūlymus rasite „Mano karjera > Praktikos pasiūlymai“ skiltyje arba https://mano.vgtu.lt/mycareer/practices"]
+        },
+        {"tag": "paskaitu_tvarka",
+        "uzklausos": ["kokia paskaitu tvarka", "kur rasti paskaitu laiko tinkleli", "kada prasideda pirma paskaita", "kada prasideda antra paskaita", "kada prasideda trecia paskaita", "kelinta prasideda ketvirta paskaita", "kada pietu pertrauka", "ar yra pietu pertrauka", "kelinta valanda prasideda penkta paskaita", "kelinta valanda prasideda sesta paskaita", "kelina prasideda septinta paskaita"],
+        "atsakymas": ["Paskaitų laiką rasute „Mano karjera > Darbo pasiūlymai“ skiltyje arba https://mano.vgtu.lt/studyprocess/lectures"]
+        },
+        {"tag": "atsiskaitynu_tvarka",
+        "uzklausos": ["kaip vyksta atsiskaitymai", "kokia atsiskaitymu tvarka", "kaip vertinami atsiskatymai", "kaip organizuojami tarpiniai atsiskaitymai", "kaip organizuojami atsiskaitymai", "kokia tvarka atsiskaitymu", "kur tasti atsiskaitymu tvarka"],
+        "atsakymas": ["Apie atsiskaitymus daugiau sužinosite „Studijų tvarka > Atsiskaitymai už kontrolinius, kursinius darbus“ skiltyje arba https://mano.vgtu.lt/studyprocess/settlements"]
+        },
+        {"tag": "sesijos_tvarka",
+        "uzklausos": ["kaip vyksta sesija", "kokia sesijos tvarka", "kaip sudaromas sesijos tvarkarastis", "kaip organizuojami galutiniai atsiskaitymai", "kaip vyksta galutinis atsiskaitymas", "kaip vyksta GA"],
+        "atsakymas": ["Daugiau informacijos apie sesijas bei gautinius atsiskaitimus rasite „Studijų tvarka > Sesija“ skiltyje arba https://mano.vgtu.lt/studyprocess/session"]
+        },
+        {"tag": "darbu_reikalavimai",
+        "uzklausos": ["kaip rengiamas bakalauro darbas", "kaip rengiamas magistro darbas", "kaip rengiamas baigiamasis darbas", "kaip rengiamas rasto darbas", "kaip parengti referata", "kokia baigiamuju darbu gynimo tvarka", "kur rasti baigiamojo darbo gynimo tvarka", "kur rasti bakalauro darbo gynimo tvarka", "kur rasti magistro darbo gynimo tvarka", "kokie reikalavimai rasto darbui", "kokie reikalavimai baigiamajam darbui", "kokia darbo rengimo tvarka", "kur rasti pristatymo sablonus", "kur rasti darbo pristatymo sablona anglu kalba", "kaip rasti pristatymu sablona lietuviu kalba", "kur yra pristatymu sablonai", "kaip turi atrodyti darbo pristatymas", "kaip atrodo baigiamojo darbo pristatymas", "kur yra vgtu sablonai", "kaip parengti bakalauro prezentacija", "kaip parengti magistro prezentacija"],
+        "atsakymas": ["Rašto darbų reikalavimus rasite „Studijų tvarka > rašto darbų reikalavimai“ skiltyje arba https://mano.vgtu.lt/studyprocess/workreq"]
+        },
+        {"tag": "ivertinimo_tvarka",
+        "uzklausos": ["kokia yra vertinimo tvarka", "kaip vertinami darbai", "kokia yra vertinimo skale", "kur rasti vertinimo skale", "kur rasti darbu vertinimo tvarka", "kur paziureti vertinimo tvarka", "kur rasti pazymiu apibudinimus", "ka pazymiai pasako apie mano gebejimus", "kada dalykas nera islaikytas", "kada dalykas yra islaikytas"],
+        "atsakymas": ["Informaciją apie įvertinimus rasite „Studijų tvarka > Įvertinimai“ skiltyje arba https://mano.vgtu.lt/studyprocess/reviews"]
+        },
+        {"tag": "apeliacijos",
+        "uzklausos": ["kokia yra apeliaciju tvarka", "ar galima pateikti apeliacija", "kaip suzinoti apie apeliacijas", "ka daryti jei nesutinki su ivertinimu", "ka daryti jei buvo vertinimo tvarkos pazeidimas", "kada rasyti apeliacija", "del kokiu priezasciu galiu teikti apeliacija", "ar galima apeliuoti del teigiamo rezultato", "kaip pateikti apeliacija"],
+        "atsakymas": ["Visą informacija apie apeliacijas rasite „Studijų tvarja > Apeliacijos“ skiltyje arba https://mano.vgtu.lt/studyprocess/appeals"]
+        },
+        {"tag": "baigiamieji_darbai_tvarka",
+        "uzklausos": ["kokia baidiamojo darbo tvarka", "kokia bakalauro darbo tvarka", "kur rasti magistro darbo tvarka", "kokia bendra baigiamuju darbu tvarka", "kur rasti informacija del baigiamuosius darbus", "kur suzinoti apie baigiamuosius darbus", "kur rasti informacijos apie baigimaji darba", "kaip rasti baigiamojo darbo blanka"],
+        "atsakymas": ["Informaciją apie baigiamuosius darbuis rasite „Studijų tvarja > Baigiamieji darbai“ skiltyje arba https://mano.vgtu.lt/studyprocess/finals"]
+        },
+        {"tag": "spausdinimas",
+        "uzklausos": ["ar vgtu yra spausdinimo paslaugos", "kur galima atspausdinti darba", "ar galima vgtu atspausdinti dokumenta", "kiek kainuoja vieno puslapio spausdinimas"],
+        "atsakymas": ["Informaciją apie spausdinimą rasi čia: https://www.vgtu.lt/informaciniu-technologiju-ir-sistemu-centras/it-paslaugos-vgtu-bendruomenei/spausdinimo-paslauga/308096"]
+        }
+]
+}

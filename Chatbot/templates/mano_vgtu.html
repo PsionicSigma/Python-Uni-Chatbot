@@ -1,0 +1,1488 @@
+<html lang="lt"><script async="" src="//www.google-analytics.com/analytics.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="Fdt0N0FIRBt0KQiv1c5PdpKGcu7VM13tAjBwCuHN5MRPs0FDeTslTQB6b8ntpCkU5uMzprFpHqBKaTxOtZ_ctQ==">
+    <title>Mano VGTU</title>
+    <link href="/css/styles/table-responsive/table.css" rel="stylesheet">
+<link href="/css/styles/table-responsive/tablekartik.css" rel="stylesheet">
+<link href="/modules/dashboard/assets/css/dashboard.css" rel="stylesheet">
+<link href="/modules/dashboard/assets/css/tour.css" rel="stylesheet" position="3">
+<link href="/css/styles/plugins/icheck/square/orange.css" rel="stylesheet">
+<link href="/css/styles/plugins/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet">
+<link href="/modules/notifications/assets/css/style.css" rel="stylesheet">
+<link href="/assets/6a06d98b/css/bootstrap.min.css?v=1616495652" rel="stylesheet">
+<link href="/assets/150256c3/semantic.min.css?v=1616495652" rel="stylesheet">
+<link href="/css/site.css?v=1618407413" rel="stylesheet">
+<link href="/assets/354b7c41/css/font-awesome.min.css?v=1616495652" rel="stylesheet">
+<link href="/assets/73169e0/css/AdminLTE.min.css?v=1616495652" rel="stylesheet">
+<link href="/assets/73169e0/css/skins/_all-skins.min.css?v=1616495652" rel="stylesheet">
+<link href="/assets/caeb2484/css/style.css?v=1616495652" rel="stylesheet">
+<link href="/assets/acf6eda3/stylesheets/language-picker.min.css?v=1616495652" rel="stylesheet">
+<link href="/assets/acf6eda3/stylesheets/flags-large.min.css?v=1616495652" rel="stylesheet">
+<script src="/js/jquery-1.11.3.min.js"></script>
+<script>let timeStep = 300
+let tourBlocks = [{"selector":".header-menu-group","text":"Pateikiama svetainės struktūra, kalbos keitimo galimybė ir sistemoje skelbiami pranešimai.","position":"bottom-left"},{"selector":".user.user-menu","text":"Profilio peržiūra ir redagavimas bei atsijungimo nuo sistemos galimybė.","position":"bottom-left"},[],{"selector":".main-menu-studies","text":"Bendra informacija apie studijas: paskaitų, konsultacijų bei egzaminų tvarkaraščiai, studijų dalykai ir kt.","position":"right","before":"if ($(window).innerWidth() < 768\n                        && !$('.sidebar-mini').hasClass('sidebar-open')) {\n                            toggleLeftSidebar();\n                        }\n                        \n                        setTimeout(function() {\n                            $('.content-overlay').css('left', $('.main-sidebar').innerWidth());\n                        }, timeStep);\n                        $('body').addClass('sidebar-open');\n                        clearOverflow();","after":"clearClip('.header-overlay');"},{"selector":".main-menu-software","text":"IT paslaugos, programinė įranga ir kt.","position":"right"},{"selector":".main-menu-library","text":"Bibliotekos ištekliai","position":"right"},{"selector":".main-menu-international","text":"Studijų mainų ir Erasmus+ praktikos paraiškų teikimas.","position":"right"},{"selector":".main-menu-life-in-vgtu","text":"Prašymo bendrabučiui teikimas, žemėlapiai ir kita.","position":"right"},{"selector":".main-menu-documents","text":"Prašymų dekanui ir rektoriui pateikimo galimybė, pažymų užsakymas. Informacija apie įsakymus, ir kita.","position":"right"},{"selector":".features-box","text":"Pranešama apie naujas sistemos funkcijas bei pateikiama kita aktuali informacija.","position":"left","before":"closeLeftSidebar();\n                    $('body').removeClass('sidebar-open');","after":"clearClip('.left-sidebar-overlay');"},{"selector":".banners","text":"Svarbios nuorodos: atsisiųsti mobiliajai programėlei, patekti į elektroninių studijų platformą, registruoti kreipinį / klausimą į IT pagalbą.","position":"top-left"},{"selector":".tour","text":"Jeigu norėsite vėl pereiti turą, jo nuorodą rasite čia.","position":"left","before":"openRightSidebar();","after":"clearClip('.content-overlay');"}]; 
+    let tourCommon = {"continueTour":"Toliau","exitTour":"Baigti turą"}</script>    <style></style></head>
+<body class="skin-blue sidebar-mini fixed ng-scope" ng-app="vgtu">
+
+    <div class="wrapper">
+    <div class="browser-notification" id="browser-notification">
+        <div class="callout callout-warning" id="callout-warning-notification">
+            Naudojama naršyklė yra pasenusi. Prašome atsinaujinti naršyklę patogesniam, saugesniam ir greitesniam naršymui.            </div>
+    </div>
+
+    <div class="browser-notification-explorer" id="browser-notification-explorer">
+        <div class="callout callout-warning" id="callout-warning-notification-explorer">
+            Internet Explorer naršyklė nėra palaikoma. Prašome naudoti kitą naršyklę patogesniam, saugesniam ir greitesniam naršymui.            </div>
+    </div>
+
+    <div class="notification-student-gone" id="notificationStudentGone" style="display: none;">
+        <div class="callout callout-warning" id="callout-warning">
+            Studentas šiuo metu yra išvykęs studijuoti / atlikti praktiką į kitą šalį (instituciją)            </div>
+    </div>
+
+    <div class="color_line"></div>
+    <header class="main-header">
+<a href="/site/index" class="logo">
+    <span class="logo-mini">
+        <img class="main_logo" src="/assets/73169e0/img/logo_m.png">
+    </span>
+    <span class="logo-lg">
+        <img class="main_logo" src="/assets/73169e0/img/logo_d.png">
+    </span>
+</a>
+
+<nav class="navbar navbar-static-top" role="navigation">
+    <a href="#" class="sidebar-toggle sidebar-nav-style" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Pagrindinis meniu</span>
+    </a>
+                <div class="hidden_lang">
+            <input type="hidden" name="hidden_lang" value="lt">            </div>
+        <div class="lecture_time display-none">
+            <span class="date">
+                2021-04-29                </span>
+            <span class="week">
+            1 savaitė                </span>
+            <div class="lecture" id="lecture_time">(vyksta  7 paskaita)</div>
+        </div>
+            <div class="navbar-custom-menu navbar-meniu-style">
+        <ul class="nav navbar-nav">
+            <li>
+<a href="/site/sitemap" title="Svetainės medis">
+    <i class="fa fa-sitemap"></i>
+</a>
+</li>
+
+<li class="dropdown messages-menu" id="site-language">
+<a class="dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown" title="Kalba">
+    <i class="fa fa-language" aria-hidden="true" title="Kalba"></i>
+</a>
+<ul class="dropdown-menu" style="width: 230px;">
+    <li class="header" style="font-size: 13px;">Numatytoji kalba</li>
+    <li>
+        <ul class="menu" id="languageListContents" style="overflow: hidden; width: 100%; height: auto;">
+            <li><a href="/site/index?language-picker-language=en&amp;id=20173714" title="en" class="link-bt"><i class="en"></i> English</a></li><li><a href="#" title="lt" class="link-bt back-color"><i id="lt"></i> Lietuvių</a></li>            </ul>
+    </li>
+</ul>
+</li>
+<li class="dropdown messages-menu" id="vgtu-mail">
+    <a class="dropdown-toggle" aria-expanded="true" href="#" data-toggle="dropdown" title="El. paštas">
+        <i class="fa fa-envelope-o"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li>
+            <ul class="menu" id="mailListContents" style="overflow: hidden; width: 100%; height: auto;">
+                                        <li>
+                        <a href="http://pastas.vgtu.lt" target="_blank">
+                            <div class="pull-left">
+                                <img class="img-circle" src="/images/outlook-icon.png">
+                            </div>
+                            <h4 style="color: #000000 !important; font-weight: bold;">Justas Martūnas</h4>
+
+                            <p>justas.martunas@vilniustech.lt</p>
+                        </a>
+                    </li>
+                                                                                                            <li>
+                            <a href="https://sso.vgtu.lt/module.php/core/loginuserpass.php?AuthState=_cbb4d145bd2588a5d6880639bd29330fec3c5c5bd9%3Ahttps%3A%2F%2Fsso.vgtu.lt%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dgoogle.com%26cookieTime%3D1436783371%26RelayState%3Dhttps%253A%252F%252Fwww.google.com%252Fa%252Fstud.vgtu.lt%252FServiceLogin%253Fservice%253Dmail%2526passive%253Dtrue%2526rm%253Dfalse%2526continue%253Dhttps%25253A%25252F%25252Fmail.google.com%25252Fa%25252Fstud.vgtu.lt%25252F%2526ss%253D1%2526ltmpl%253Ddefault%2526ltmplcache%253D2%2526emr%253D1%2526osid%253D1" target="_blank">
+                                <div class="pull-left">
+                                    <img class="img-circle" src="/images/gmail-icon.png">
+                                </div>
+                                <h4 style="color: #000000 !important; font-weight: bold;">Justas Martūnas</h4>
+
+                                <p>justas.martunas@stud.vgtu.lt</p>
+                            </a>
+                        </li>
+                                                        </ul>
+        </li>
+    </ul>
+</li>
+            
+<li class="dropdown notifications-menu" id="notifications-dropdown">
+<a href="#" class="dropdown-toggle dropdown-toggle-style" data-toggle="dropdown" id="notifications-dropdown-btn">
+    <i class="fa fa-bell-o"></i>
+    <span class="label label-warning count-notifications">1</span>
+</a>
+<ul class="dropdown-menu dropdown-toggle-style" id="notifications-dropdown-content">
+    <li id="notifications-overlay">
+        <i class="fa fa-refresh fa-spin"></i>
+    </li>
+</ul>
+</li>
+            <!--<li class="dropdown tasks-menu">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    <i class="fa fa-flag-o"></i>
+    <span class="label label-danger">9</span>
+</a>
+<ul class="dropdown-menu">
+    <li class="header">You have 9 tasks</li>
+    <li>
+        <ul class="menu">
+            <li>
+                <a href="#">
+                    <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                    </h3>
+                    <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                             aria-valuemax="100">
+                            <span class="sr-only">20% Complete</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <h3>
+                        Create a nice theme
+                        <small class="pull-right">40%</small>
+                    </h3>
+                    <div class="progress xs">
+                        <div class="progress-bar progress-bar-green" style="width: 40%"
+                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                             aria-valuemax="100">
+                            <span class="sr-only">40% Complete</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <h3>
+                        Some task I need to do
+                        <small class="pull-right">60%</small>
+                    </h3>
+                    <div class="progress xs">
+                        <div class="progress-bar progress-bar-red" style="width: 60%"
+                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                             aria-valuemax="100">
+                            <span class="sr-only">60% Complete</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <h3>
+                        Make beautiful transitions
+                        <small class="pull-right">80%</small>
+                    </h3>
+                    <div class="progress xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%"
+                             role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                             aria-valuemax="100">
+                            <span class="sr-only">80% Complete</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li class="footer">
+        <a href="#">View all tasks</a>
+    </li>
+</ul>
+</li>-->                <li class="dropdown user user-menu">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" id="user-menu-mini-foto">
+    <img class="profile-user-img img-responsive img-circle user-photo" alt="Justas Martūnas" src="/photos/darb/0d2473004e44e9dc0d987876285f50e3a.jpg">
+    <span class="hidden-xs">
+        Justas Martūnas        </span>
+</a>
+<ul class="dropdown-menu">
+    <li class="user-header">
+        <img class="profile-user-big-img img-responsive img-circle user-photo" alt="Justas Martūnas" src="/photos/darb/0d2473004e44e9dc0d987876285f50e3a.jpg">
+        <p>Justas Martūnas</p>
+    </li>
+    <li class="user-footer">
+        <div class="pull-left">
+            <a class="btn btn-default btn-flat" href="/profile/site">Mano profilis</a>            </div>
+        <div class="pull-right">
+            <a href="/user/logout" class="btn btn-default btn-flat">
+                Atsijungti                </a>
+        </div>
+    </li>
+</ul>
+</li>
+            <li class="settings-menu">
+                <a href="#" data-toggle="control-sidebar" title="Nustatymai">
+                    <i class="fa fa-gears"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+    <aside class="main-sidebar">
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 579px;"><section class="sidebar" style="height: 579px; overflow: hidden; width: auto;">
+            <ul class="sidebar-menu active">
+<!-- Home -->
+    <li>
+    <a href="/site/index">
+        <i class="fa fa-home"></i>
+        <span>Pradžia</span>
+    </a>
+</li>
+        <li class="main-menu-studies">
+    <a href="#">
+<i class="fa fa-graduation-cap"></i> <span>Studijos</span>
+<i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu studies-left-tab">
+        <li>
+        <a href="/thissemester/site/loadindex">
+            <div class="word-wrap-block">
+                <i class="menu_dot"></i>
+                Šis semestras                </div>
+            <i class="fa fa-angle-right pull-right"></i></a>
+        <ul class="treeview-menu">
+            <li>
+                <a href="/thissemester/site/loadindex">
+                    <i class="menu_dot"></i>
+                    Studijų programa                    </a>
+            </li>
+                                        <li>
+                            <a href="/thissemester/site/topic?MOD_ID=66856821&amp;MOD_CODE=FMISB16815&amp;BDMODID=0&amp;SKYR=5">
+                                <i class="menu_dot"></i>
+                                Duomenų gavybos pagrindai                                </a>
+                        </li>
+                                                <li>
+                            <a href="/thissemester/site/topic?MOD_ID=3647129&amp;MOD_CODE=FMISB16807&amp;BDMODID=0&amp;SKYR=5">
+                                <i class="menu_dot"></i>
+                                Modernių duomenų bazių pagrindai                                </a>
+                        </li>
+                                                <li>
+                            <a href="/thissemester/site/topic?MOD_ID=3543538&amp;MOD_CODE=FMISB16804&amp;BDMODID=3543538&amp;SKYR=5">
+                                <i class="menu_dot"></i>
+                                Bakalauro baigiamasis darbas 3                                </a>
+                        </li>
+                                                <li>
+                            <a href="/thissemester/site/topic?MOD_ID=3543561&amp;MOD_CODE=FMISB16803&amp;BDMODID=3543538&amp;SKYR=5">
+                                <i class="menu_dot"></i>
+                                Bakalauro baigiamasis darbas 2                                </a>
+                        </li>
+                                                <li>
+                            <a href="/thissemester/site/topic?MOD_ID=24542401&amp;MOD_CODE=FMISB16811&amp;SKYR=5">
+                                <i class="menu_dot"></i>
+                                Informacinių sistemų auditas                                </a>
+                        </li>
+                                                <li>
+                            <a href="/thissemester/site/topic?MOD_ID=3564252&amp;MOD_CODE=FMITB16809&amp;SKYR=5">
+                                <i class="menu_dot"></i>
+                                Programavimas duomenų bazių aplinkoje                                </a>
+                        </li>
+                                        <li>
+                    <a href="/thissemester/site/select-index">
+                        <i class="menu_dot"></i> Laisvai pasirenkamas dalykas                            (Šį semestrą studentui nepriklauso laisvas pasirinkimas.)
+                    </a>
+                </li>
+                            <li>
+                <a href="/thissemester/site/debts">
+                    <i class="menu_dot"></i>
+                    Akademinės skolos                    </a>
+            </li>
+        </ul>
+    </li>
+                <li>
+            <a href="/program/site">
+                <i class="menu_dot"></i>
+                Visa studijų programa                </a>
+        </li>
+                        <li>
+                <a href="/practices/site/practice-information">
+                    <div class="word-wrap-block">
+                        <i class="menu_dot"></i>
+                        Praktikos                        </div>
+                </a>
+            </li>
+                        <li>
+        <a href="/results/site">
+            <div class="word-wrap-block">
+                <i class="menu_dot"></i>
+                Mano rezultatai                </div>
+        </a>
+    </li>
+    <li>
+    <a href="/examstimetable/exams">
+        <div class="word-wrap-block">
+            <i class="menu_dot"></i>
+            Egzaminų tvarkaraštis            </div>
+    </a>
+</li>
+    <li>
+    <a href="/studyprograms/site">
+        <div class="word-wrap-block">
+            <i class="menu_dot"></i>
+            Studijų programos            </div>
+    </a>
+</li>
+<li>
+    <a href="/auditoccupancy/auditoccupancy">
+        <div class="word-wrap-block">
+            <i class="menu_dot"></i>
+            Auditorijų užimtumas            </div>
+    </a>
+</li>
+<li>
+    <a href="/timetable/site/search-form">
+        <div class="word-wrap-block">
+            <i class="menu_dot"></i>
+            Paskaitų tvarkaraščiai            </div>
+    </a>
+</li>
+    <li>
+    <a href="/lecturerconsult/consult/consult">
+        <div class="word-wrap-block">
+            <i class="menu_dot"></i>
+            Dėstytojų konsultacijos            </div>
+    </a>
+</li>
+</ul>
+</li>
+<li class="main-menu-study-process">
+        <a href="#">
+    <i class="fa fa-bullhorn"></i> <span>Studijų tvarka</span>
+    <i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu">
+    <li>
+        <a href="/studyprocess/rates">
+            <i class="menu_dot"></i>
+            Akademinės etikos normos            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/lectures">
+            <i class="menu_dot"></i>
+            Paskaitos            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/settlements">
+            <i class="menu_dot"></i>
+            Atsiskaitymai už kontrolinius, kursinius darbus            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/session">
+            <i class="menu_dot"></i>
+            Sesija            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/workreq">
+            <i class="menu_dot"></i>
+            Rašto darbų reikalavimai            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/reviews">
+            <i class="menu_dot"></i>
+            Įvertinimai            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/appeals">
+            <i class="menu_dot"></i>
+            Apeliacijos            </a>
+    </li>
+            <li>
+        <a href="/studyprocess/scholarships">
+            <i class="menu_dot"></i>
+            Stipendijos            </a>
+    </li>
+    <li>
+        <a href="/studyprocess/finals">
+            <i class="menu_dot"></i>
+            Baigiamieji darbai            </a>
+    </li>
+</ul>
+</li>
+<li class="main-menu-software">
+    <a href="/itservices/site">
+<i class="fa fa-cog"></i>
+<span>IT paslaugos</span>
+</a>
+</li>
+<li class="main-menu-library">
+    <a href="/library/site">
+<i class="fa fa-book"></i>
+<span>Biblioteka</span>
+</a>
+</li>
+<li class="main-menu-career">
+        <a href="/mycareer">
+    <i class="fa fa-suitcase"></i>
+    <span>Mano karjera</span>
+    <i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu">
+    <li>
+        <a href="/mycareer/careerplanning">
+            <i class="menu_dot"></i>
+            Konsultacijos planuojant karjerą            </a>
+    </li>
+    <li>
+        <a href="/mycareer/practiceconsult">
+            <i class="menu_dot"></i>
+            Konsultacijos dėl praktikos            </a>
+    </li>
+    <li>
+        <a href="/mycareer/careerday">
+            <i class="menu_dot"></i>
+            VGTU karjeros dienos            </a>
+    </li>
+    <li>
+        <a href="/mycareer/jobs">
+            <i class="menu_dot"></i>
+            Darbo pasiūlymai            </a>
+    </li>
+    <li>
+        <a href="/mycareer/practices">
+            <i class="menu_dot"></i>
+            Praktikos pasiūlymai            </a>
+    </li>
+    <li>
+        <a href="/mycareer/contacts">
+            <i class="menu_dot"></i>
+            Kontaktai            </a>
+    </li>
+</ul>
+</li>
+<li class="main-menu-international">
+        <a href="/international">
+    <i class="fa fa-newspaper-o"></i>
+    <span>Tarptautinės galimybės</span>
+    <i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu">
+    <li>
+        <a href="#">
+            <i class="menu_dot"></i>
+            Studijų mainai                <i class="fa fa-angle-right pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+            <li>
+                <a href="/international/international/erasmusstudyinfo">
+                    <i class="menu_dot"></i>
+                    Informacija                    </a>
+            </li>
+            <li>
+                <a href="/international/international/studyform">
+                    <i class="menu_dot"></i>
+                    Teikti paraišką                    </a>
+            </li>
+            <li>
+                <a href="/international/international/studiesapplications">
+                    <i class="menu_dot"></i>
+                    Mano paraiškos                    </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">
+            <i class="menu_dot"></i>
+            Erasmus+ praktika                <i class="fa fa-angle-right pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+            <li>
+                <a href="/international/international/erasmuspracticeinfo">
+                    <i class="menu_dot"></i>
+                    Informacija                    </a>
+            </li>
+            <li>
+                <a href="/international/international/practiceform">
+                    <i class="menu_dot"></i>
+                    Teikti paraišką                    </a>
+            </li>
+
+            <li>
+                <a href="/international/international/practiceapplications">
+                    <i class="menu_dot"></i>
+                    Mano paraiškos                    </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="/international/international/internationalopportunities">
+            <i class="menu_dot"></i>
+            Kitos tarptautinės galimybės            </a>
+    </li>
+</ul>
+</li>
+<li class="main-menu-life-in-vgtu">
+    <a href="#">
+<i class="fa fa-university"></i>
+<span>Gyvenimas VGTU</span>
+<i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu">
+        <li>
+    <a href="/vgtulife/learnparticipate">
+        <i class="menu_dot"></i>
+        Sužinok ir dalyvauk        </a>
+</li>
+    <li>
+    <a href="/vgtulife/bankofideas">
+        <i class="menu_dot"></i>
+        Idėjų bankas        </a>
+</li>
+<li>
+    <a href="#"><i class="menu_dot"></i>
+        Kontaktai            <i class="fa fa-angle-right pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <li>
+            <a href="
+            http://www.vgtu.lt/kontaktai/-pagrindiniai-kontaktai/519" target="_blank"><i class="menu_dot"></i>
+                VGTU kontaktai                </a>
+        </li>
+                            </ul>
+</li>
+<li>
+    <a href="#">
+        <i class="menu_dot"></i>
+        Bendrabučiai            <i class="fa fa-angle-right pull-right"></i>
+    </a>
+    <ul class="treeview-menu">
+        <li>
+            <a href="/hostel/site">
+                <i class="menu_dot"></i>
+                Informacija                </a>
+        </li>
+                        <li>
+                <a href="/hostel/site/request-form">
+                    <i class="menu_dot"></i>
+                    Teikti prašymą                    </a>
+            </li>
+            <li>
+                <a href="/hostel/site/requests">
+                    <i class="menu_dot"></i>
+                    Prašymai                    </a>
+            </li>
+                </ul>
+</li>
+<li>
+    <a href="/vgtulife/maps">
+        <i class="menu_dot"></i>VGTU žemėlapiai        </a>
+</li>
+</ul>
+</li>
+    <li class="main-menu-documents">
+        <a href="#">
+    <i class="fa fa-files-o"></i>
+    <span>Mano dokumentai</span>
+    <i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu">
+                            <li>
+                        <a href="/documentation/documentation/orders">
+                            <i class="menu_dot"></i>
+                            Įsakymai                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/documentation/salary">
+                            <i class="menu_dot"></i>
+                            Atsiskaitymo lapelis                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/requests/site">
+                            <i class="menu_dot"></i>
+                            Prašymai                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/documentation/studyfees">
+                            <i class="menu_dot"></i>
+                            Įmokos už studijas                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/documentation/documentation/scholarship">
+                            <i class="menu_dot"></i>
+                            Stipendijų išmokos                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/documentation/certificates">
+                            <i class="menu_dot"></i>
+                            Pažymos                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/vacation/site">
+                            <i class="menu_dot"></i>
+                            Atostogos                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/documentation/hostels">
+                            <i class="menu_dot"></i>
+                            Įmokos už bendrabutį                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/#">
+                            <i class="menu_dot"></i>
+                            Komandiruotės                                                                    <i class="fa fa-angle-right pull-right"></i>
+                                                        </a>
+                                                        <ul class="treeview-menu">
+                                                                        <li>
+                                        <a href="/secondments/site">
+                                            <i class="menu_dot"></i>
+                                            Pildyti prašymą                                            </a>
+                                    </li>
+                                                                        <li>
+                                        <a href="/secondments/site/list-index">
+                                            <i class="menu_dot"></i>
+                                            Prašymų sąrašas                                            </a>
+                                    </li>
+                                                                </ul>
+                                                </li>
+                                            <li>
+                        <a href="/documentation/final-report-slip">
+                            <i class="menu_dot"></i>
+                            Studento atsiskaitymo lapelis                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/documentsapproval/site">
+                            <i class="menu_dot"></i>
+                            Suderinti / susipažinti                                                            </a>
+                                                </li>
+                                            <li>
+                        <a href="/requests/other">
+                            <i class="menu_dot"></i>
+                            Kita                                                            </a>
+                                                </li>
+                        </ul>
+</li>
+            <li class="main-menu-surveys">
+        <a href="#">
+<i class="fa fa-clone"></i>
+<span>Apklausos</span>
+<i class="fa fa-angle-right pull-right"></i>
+</a>
+<ul class="treeview-menu">
+    <li>
+    <a href="/surveys/results">
+        <i class="menu_dot"></i>
+        Studentų apklausos apie dėstymo kokybę rezultatai        </a>
+</li>
+</ul>        </li>
+
+    <li class="main-menu-covid">
+    <a href="/announcement/covid/information">
+<i class="fa fa-medkit"></i>
+<span>COVID-19</span>
+</a>
+</li>
+</ul>
+        </section><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 579px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+    </aside>
+
+    <script>
+$(function () {
+    if (window.location.pathname === '/') {
+        $('.active').removeClass('active');
+    }
+});
+$("a[href$=\"" + window.location.pathname + window.location.search + "\"]").closest('.treeview').addClass('active');
+//open main treeview
+$("a[href$=\"" + window.location.pathname + window.location.search + "\"]").closest('.treeview').parent('ul').addClass('menu-open');
+$("a[href$=\"" + window.location.pathname + window.location.search + "\"]").closest('.treeview').parent('ul').css('display', 'block');
+//set current list menu active
+$("a[href$=\"" + window.location.pathname + window.location.search + "\"]").parent('li').addClass('active');
+//set parent treeview-menu active
+$("a[href$=\"" + window.location.pathname + window.location.search + "\"]").parent('li').parent('ul').parent('li').addClass('active');
+$("a[href$=\"" + window.location.pathname + window.location.search + "\"]").parent('li').parent('ul').parent('li').parent('ul').parent('li').addClass('active');
+
+//do not delete.
+//    $("a[href$=\"" + window.location.pathname + "\"]").parent('li').parent('ul').parent('li').find('.treeview-menu').addClass('menu-open');
+//    $("a[href$=\"" + window.location.pathname + "\"]").parent('li').parent('ul').parent('li').find('.treeview-menu').css('display', 'block');
+//do not delete.
+
+$(".loadonclick").click(function () {
+    $(".content").fadeOut();
+});
+
+$(function () {
+    // changed id to class
+    $('.users-activity').click(function () {
+        $.get($(this).attr('href'), function (data) {
+            var modal = $('#modal');
+            var modal_header = $('div#modal div.modal-content div#modalHeader');
+            var modal_body = $('div#modal div.modal-content div.modal-body');
+            var modal_footer = $('div#modal div.modal-content div.modal-footer');
+
+            $(modal_header).html('&nbsp &nbsp' + getUserInformationHeader() + getButtonx());
+            $(modal_body).html(data);
+            modal_body.find('.usersinformation').css({"padding-top": "15px", "padding-bottom": "15px"});
+            $(modal).modal('show');
+        });
+        return false;
+    });
+});
+
+function getUserInformationHeader() {
+    var header = 'Naujausia veikla paskyroje';
+    return header;
+}
+
+</script>
+<div class="content-wrapper" style="min-height: 676px; padding-top: 82px;"><div id="notification-modal" class="fade modal" role="dialog">
+<div class="modal-dialog modal-notifications-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<i></i><span id="notification-title"></span>
+</div>
+<div class="modal-body">
+<div id="notification-container"></div><div class="tabs-overlay dn" id="notifications-view-overlay"><i class="fa fa-refresh fa-spin"></i></div>
+</div>
+
+</div>
+</div>
+</div>
+<section class="content-header">
+    <h1>
+        Mano VGTU        </h1>
+        </section>
+<section class="content">
+            <div id="message"></div>
+            
+<div class="row">
+<div class="col-md-9">
+                <div class="callout callout-info">
+        <h4>
+            <i class="fa fa-info-circle"></i>
+            Užsiėmimų organizavimas pavasario semestro metu po Šv. Velykų            </h4>
+        <p>Mieli VILNIUS TECH studentai,</p>
+
+<p>Vilniaus Gedimino technikos universiteto (VILNIUS TECH) rektorius patvirtino Vilniaus Gedimino technikos universiteto studijų proceso organizavimo ir vykdymo laikinosios tvarkos aprašo naują redakciją. Dalinamės tvarka (<a href="https://vilniustech.lt/files/4004/200/10/19_0/Studijos_04-06.pdf" target="_blank">nuoroda čia</a>), kaip organizuosime studijų procesą po Šv. Velykų. Atkreipiame dėmesį į keletą itin svarbių dalykų tvarkoje:</p>
+
+<p>1. Nuo balandžio 6 d. visi užsiėmimai visų pakopų studentams ir toliau bus organizuojami nuotoliniu būdu, išskyrus Antano Gustaičio aviacijos instituto organizuojamas praktikas ir veiklas universitete, būtinas baigiamųjų darbų atlikimui laboratorijose ar dirbtuvėse prototipų kūrimui, bei atskirų studijų programų būtiniausius laboratorinius darbus.</p>
+
+<p>2.&nbsp; Mokomosios praktikos universitete, kurių atlikimui reikalinga specializuota įranga, bus organizuojamos pagal mokomųjų praktikų atlikimo grafiką ir tvarką, patvirtintą fakulteto dekano.</p>
+
+<p>3. Visi tarpiniai ir galutiniai atsiskaitymai, įskaitant baigiamųjų darbų gynimą bus organizuojami nuotoliniu būdu.</p>
+
+<p>4. Tvarkos apraše nurodoma, kaip reikia registruoti praktikų sutartis.</p>
+
+<p>Tikime, kad toks studijų organizavimo būdas – laikinas ir greitai galėsime grįžti prie įprastinio gyvenimo ritmo. Iki tol – bendradarbiaukime ir visas iškilusias problemas spręskime kartu.</p>
+
+<p>Jūsų VILNIUS TECH</p>
+    </div>
+<div class="students-timetable-box"><div id="bc_timetable" class="box box-default"><div class="box-header with-border"><h3 class="box-title">Mano tvarkaraštis</h3><div class="box-tools pull-right"><button class="btn btn-default btn-xs" data-widget="collapse" id="bc_timetable_btn"><i class="fa fa-minus"></i></button></div></div><div class="box-body"><div class="students-timetable-block">    <div class="callout callout-warning">
+    Šiandien ir rytoj paskaitų nėra    </div>
+<div class="box-footer-link">
+    <a href="/timetable/site/search-form" class="news_portal_link">
+    Visas paskaitų tvarkaraštis    </a>
+</div>
+<div class="box-footer-link last">
+<a href="/vgtulife/maps" class="news_portal_link">
+    VGTU žemėlapiai    </a>
+</div>
+<script src="/assets/1c2d5410/lt.js?v=1619716973"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script></div></div></div></div><div class="news-box"><div id="bc_w0" class="box box-default"><div class="box-header with-border"><h3 class="box-title">Naujienos</h3><div class="box-tools pull-right"><button class="btn btn-default btn-xs" data-widget="collapse" id="bc_w0_btn"><i class="fa fa-minus"></i></button></div></div><div class="box-body"><div class="news-block">    <div class="news_block_wrapper">
+                <div class="news_wrapper">
+                            <a href="https://vgtu.lt/246468?nid=327745" target="_blank">
+                                        <img src="https://www.vgtu.lt/uploads/images/dir3831/dir191/dir9/10_2.php" alt="Kviečiame dalyvauti atvirame seminare apie verslo rinką Kanadoje" class="img-responsive pad">
+                    <div class="news_text">
+                        Kviečiame dalyvauti atvirame seminare apie verslo rinką Kanadoje                        </div>
+                </a>
+        </div>
+                <div class="news_wrapper">
+                            <a href="https://vgtu.lt/246468?nid=327743" target="_blank">
+                                        <img src="https://www.vgtu.lt/uploads/images/dir4031/dir201/dir10/16_2.php" alt="EURO darbo grupės veikla – sėkmingo tarptautinio bendradarbiavimo pavyzdys" class="img-responsive pad">
+                    <div class="news_text">
+                        EURO darbo grupės veikla – sėkmingo tarptautinio bendradarbiavimo pavyzdys                        </div>
+                </a>
+        </div>
+                <div class="news_wrapper">
+                            <a href="https://vgtu.lt/246468?nid=327724" target="_blank">
+                                        <img src="https://www.vgtu.lt/uploads/images/dir4031/dir201/dir10/4_2.php" alt="VILNIUS TECH startuoja nauja magistro studijų programa –  VERSLO ADMINISTRAVIMAS (MBA)" class="img-responsive pad">
+                    <div class="news_text">
+                        VILNIUS TECH startuoja nauja magistro studijų programa –  VERSLO ADMINISTRAVIMAS (MBA)                        </div>
+                </a>
+        </div>
+                <div class="news_wrapper">
+                            <a href="https://vgtu.lt/246468?nid=327720" target="_blank">
+                                        <img src="https://www.vgtu.lt/uploads/images/dir4030/dir201/dir10/16_2.php" alt="MITA startuolius kviečia registruotis į „TechHub“ pre-akceleratorių" class="img-responsive pad">
+                    <div class="news_text">
+                        MITA startuolius kviečia registruotis į „TechHub“ pre-akceleratorių                        </div>
+                </a>
+        </div>
+        </div>
+<a href="http://naujienos.vgtu.lt" class="news_portal_link" target="_blank">
+Visos naujienos</a>
+<script src="/assets/1c2d5410/lt.js?v=1619716973"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script></div></div></div></div><div class="learn-participate-box dashboard-grid"><div id="bc_w1" class="box box-default"><div class="box-header with-border"><h3 class="box-title">Sužinok ir dalyvauk</h3><div class="box-tools pull-right"><button class="btn btn-default btn-xs" data-widget="collapse" id="bc_w1_btn"><i class="fa fa-minus"></i></button></div></div><div class="box-body"><div class="learn-participate-block">
+<div class="callout callout-warning">Nėra užklausą atitinkančių įrašų.</div><a class="news_portal_link" href="/vgtulife/learnparticipate" style="float:right;">Visi skelbimai</a><script src="/assets/1c2d5410/lt.js?v=1619716973"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script></div></div></div></div><div class="job-offers-box dashboard-grid"><div id="bc_w2" class="box box-default"><div class="box-header with-border"><h3 class="box-title">Fundamentinių mokslų fakultetas - Naujausi darbo skelbimai</h3><div class="box-tools pull-right"><button class="btn btn-default btn-xs" data-widget="collapse" id="bc_w2_btn"><i class="fa fa-minus"></i></button></div></div><div class="box-body"><div class="job-offers-block">
+
+<link href="/assets/c8670f63/css/kv-grid.min.css?v=1616495901" rel="stylesheet">
+<link href="/assets/f524f9a3/css/bootstrap-dialog-bs3.min.css?v=1616495901" rel="stylesheet">
+<script src="/assets/f524f9a3/js/dialog.min.js?v=1616495901"></script>
+<script>var krajeeDialogDefaults_f77ffd0f = {"alert":{"type":"type-info","title":"Information","buttonLabel":"<span class=\"glyphicon glyphicon-ok\"></span> Ok"},"confirm":{"type":"type-warning","title":"Confirmation","btnOKClass":"btn-warning","btnOKLabel":"<span class=\"glyphicon glyphicon-ok\"></span> Ok","btnCancelLabel":"<span class=\"glyphicon glyphicon-ban-circle\"></span>  Cancel"},"prompt":{"draggable":false,"title":"Information","buttons":[{"label":"Cancel","icon":"glyphicon glyphicon-ban-circle","cssClass":"btn-default"},{"label":"Ok","icon":"glyphicon glyphicon-ok","cssClass":"btn-primary"}],"closable":false},"dialog":{"draggable":true,"title":"Information","buttons":[{"label":"Cancel","icon":"glyphicon glyphicon-ban-circle","cssClass":"btn-default"},{"label":"Ok","icon":"glyphicon glyphicon-ok","cssClass":"btn-primary"}]}};
+var krajeeDialog_6d7f2d25 = {"id":"w2"};
+var krajeeDialog=new KrajeeDialog(true,krajeeDialog_6d7f2d25,krajeeDialogDefaults_f77ffd0f);</script><div id="job-offers-list-grid-pjax" data-pjax-container="" data-pjax-timeout="1000"><div class="kv-loader-overlay"><div class="kv-loader"></div></div><div id="job-offers-list-grid" class="grid-view is-bs3 hide-resize" data-krajee-grid="kvGridInit_b473d3b3" data-krajee-ps="ps_job_offers_list_grid_container"><div class="panel panel-default">
+
+<div id="job-offers-list-grid-container" class="kv-grid-container"><table class="responsive-table kv-grid-table table table-hover table-bordered table-striped"><thead>
+
+<tr><th class="table-header-kartik" data-col-seq="0">Paskelbta</th><th class="table-header-kartik" data-col-seq="1">Pasiūlymas</th><th class="table-header-kartik" data-col-seq="2">Galioja iki</th></tr>
+
+</thead>
+<tbody>
+<tr data-key="0"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-28</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327768" data-name="jobOffer">Jaunesnysis duomenų analitikas (-ė)</span><br><i>UAB "Palink"</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-05-12</td></tr>
+<tr data-key="1"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-28</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327767" data-name="jobOffer">Apmokama vasaros praktikos programa programuotojams</span><br><i>Alna Business</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-06-01</td></tr>
+<tr data-key="2"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-23</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327712" data-name="jobOffer">SEB Tech Programme 2021 (paid)</span><br><i>SEB</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-05-23</td></tr>
+<tr data-key="3"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-23</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327707" data-name="jobOffer">ABB Robotics business Internships (paid)</span><br><i>ABB Robotics</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-05-14</td></tr>
+<tr data-key="4"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-23</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327708" data-name="jobOffer">Customer Support Specialist Internship (paid)</span><br><i>ABB</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-05-30</td></tr>
+<tr data-key="5"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-19</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327589" data-name="jobOffer">Projektuotoja(s)</span><br><i>PPF Stamp, UAB</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-06-19</td></tr>
+<tr data-key="6"><td class="table-data-kartik-10 table-data-kartik-center" data-title="Paskelbta" data-col-seq="0">2021-04-16</td><td class="table-data-kartik-45 table-data-kartik-left" data-title="Pasiūlymas" data-col-seq="1"><span data-id="327555" data-name="jobOffer">DUOMENŲ ANALITIKAS (-Ė)</span><br><i>Energijos skirstymo operatorius, AB</i></td><td class="table-data-kartik-10 table-data-kartik-center" data-title="Galioja iki" data-col-seq="2">2021-04-30</td></tr>
+</tbody></table></div>
+<div class="kv-panel-after"></div>
+</div></div></div><a class="news_portal_link" href="/mycareer/jobs" style="float:right;">VISI DARBO SKELBIMAI</a><script src="/assets/1c2d5410/lt.js?v=1619716973"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script>
+<script src="/assets/52b05feb/yii.js?v=1616495652"></script>
+<script src="/assets/f524f9a3/js/bootstrap-dialog.min.js?v=1616495901"></script>
+<script src="/assets/f524f9a3/js/dialog-yii.min.js?v=1616495901"></script>
+<script src="/assets/c8670f63/js/kv-grid-export.min.js?v=1616495901"></script>
+<script src="/assets/52b05feb/yii.gridView.js?v=1616495652"></script>
+<script src="/assets/5d4b794e/jquery.pjax.js?v=1616495901"></script>
+<script>jQuery('#w0').dropdown();
+krajeeYiiConfirm('krajeeDialog');
+var kvGridExp_c6cd17ed={"gridId":"job-offers-list-grid","action":"/gridview/export/download","module":"gridview","encoding":"utf-8","bom":1,"target":"_blank","messages":{"allowPopups":"Išjūnkite visas iškylančiųjų langų blokavimo programas, jog užtikrintumėt tinkamą sistemos veikima.","confirmDownload":"Tęsti?","downloadProgress":"Generuojamas eksportavimo failas. Prašome palaukti.","downloadComplete":"Užklausa išsiųsta. Galite saugiai uždaryti šį langą kai išsisaugosit failą"},"exportConversions":[{"from":"<span class=\"glyphicon glyphicon-ok text-success\"></span>","to":"Aktyvus"},{"from":"<span class=\"glyphicon glyphicon-remove text-danger\"></span>","to":"Neaktyvus"}],"showConfirmAlert":true};
+var kvGridExp_12735912={"filename":"grid-export","showHeader":true,"showPageSummary":true,"showFooter":true};
+var kvGridExp_8128afa1={"dialogLib":"krajeeDialog","gridOpts":kvGridExp_c6cd17ed,"genOpts":kvGridExp_12735912,"alertMsg":"HTML eksportavimo failas bus sugeneruotas jūsų atsisiuntimui","config":{"cssFile":["https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"]}};
+var kvGridExp_f1b816bd={"dialogLib":"krajeeDialog","gridOpts":kvGridExp_c6cd17ed,"genOpts":kvGridExp_12735912,"alertMsg":"CSV eksportavimo failas bus sugeneruotas jūsų atsisiuntimui","config":{"colDelimiter":",","rowDelimiter":"\r\n"}};
+var kvGridExp_b558df70={"dialogLib":"krajeeDialog","gridOpts":kvGridExp_c6cd17ed,"genOpts":kvGridExp_12735912,"alertMsg":"TEXT eksportavimo failas bus sugeneruotas jūsų atsisiuntimui","config":{"colDelimiter":"\t","rowDelimiter":"\r\n"}};
+var kvGridExp_e5ed56c7={"dialogLib":"krajeeDialog","gridOpts":kvGridExp_c6cd17ed,"genOpts":kvGridExp_12735912,"alertMsg":"EXCEL eksportavimo failas bus sugeneruotas jūsų atsisiuntimui","config":{"worksheet":"ExportWorksheet","cssFile":""}};
+var kvGridExp_2b96d74d={"dialogLib":"krajeeDialog","gridOpts":kvGridExp_c6cd17ed,"genOpts":kvGridExp_12735912,"alertMsg":"PDF eksportavimo failas bus sugeneruotas jūsų atsisiuntimui","config":{"mode":"UTF-8","format":"A4-L","destination":"D","marginTop":20,"marginBottom":20,"cssInline":".kv-wrap{padding:20px}","methods":{"SetHeader":[{"odd":{"L":{"content":"Yii2 Grid Export (PDF)","font-size":8,"color":"#333333"},"C":{"content":"Išdėstymo eksportavimas","font-size":16,"color":"#333333"},"R":{"content":"Sugeneruota: Thu, 29-Apr-2021","font-size":8,"color":"#333333"}},"even":{"L":{"content":"Yii2 Grid Export (PDF)","font-size":8,"color":"#333333"},"C":{"content":"Išdėstymo eksportavimas","font-size":16,"color":"#333333"},"R":{"content":"Sugeneruota: Thu, 29-Apr-2021","font-size":8,"color":"#333333"}}}],"SetFooter":[{"odd":{"L":{"content":"© Krajee Yii2 Valdikliai","font-size":8,"font-style":"B","color":"#999999"},"R":{"content":"[ {PAGENO} ]","font-size":10,"font-style":"B","font-family":"serif","color":"#333333"},"line":true},"even":{"L":{"content":"© Krajee Yii2 Valdikliai","font-size":8,"font-style":"B","color":"#999999"},"R":{"content":"[ {PAGENO} ]","font-size":10,"font-style":"B","font-family":"serif","color":"#333333"},"line":true}}]},"options":{"title":"Išdėstymo eksportavimas","subject":"PDF exportavimas generuotas \"kartik-v/yii2-grid extension\" valdiklio pagalba ","keywords":"krajee, grid, export, yii2-grid, pdf"},"contentBefore":"","contentAfter":""}};
+var kvGridExp_c2a1d930={"dialogLib":"krajeeDialog","gridOpts":kvGridExp_c6cd17ed,"genOpts":kvGridExp_12735912,"alertMsg":"JSON eksportavimo failas bus sugeneruotas jūsų atsisiuntimui","config":{"colHeads":[],"slugColHeads":false,"jsonReplacer":function(k,v){return typeof(v)==='string'?$.trim(v):v},"indentSpace":4}};
+var kvGridInit_b473d3b3=function(){
+jQuery('#job-offers-list-grid .export-html').gridexport(kvGridExp_8128afa1);jQuery('#job-offers-list-grid .export-csv').gridexport(kvGridExp_f1b816bd);jQuery('#job-offers-list-grid .export-txt').gridexport(kvGridExp_b558df70);jQuery('#job-offers-list-grid .export-xls').gridexport(kvGridExp_e5ed56c7);jQuery('#job-offers-list-grid .export-pdf').gridexport(kvGridExp_2b96d74d);jQuery('#job-offers-list-grid .export-json').gridexport(kvGridExp_c2a1d930);
+};
+kvGridInit_b473d3b3();
+jQuery("#job-offers-list-grid-pjax").on('pjax:timeout', function(e){e.preventDefault()}).off('pjax:complete.83e9cfad').on('pjax:complete.83e9cfad', function(){setTimeout(kvGridInit_b473d3b3, 2500);
+});
+jQuery('#job-offers-list-grid').yiiGridView({"filterUrl":"\/dashboard\/site\/joffers","filterSelector":"#job-offers-list-grid-filters input, #job-offers-list-grid-filters select","filterOnFocusOut":true});
+jQuery(document).pjax("#job-offers-list-grid-pjax a", {"push":false,"replace":false,"timeout":1000,"scrollTo":false,"container":"#job-offers-list-grid-pjax"});
+jQuery(document).on("submit", "#job-offers-list-grid-pjax form[data-pjax]", function (event) {jQuery.pjax.submit(event, {"push":false,"replace":false,"timeout":1000,"scrollTo":false,"container":"#job-offers-list-grid-pjax"});});</script></div></div></div></div><div class="features-box"><div id="bc_w3" class="box box-default"><div class="box-header with-border"><h3 class="box-title">Aktuali informacija</h3><div class="box-tools pull-right"><button class="btn btn-default btn-xs" data-widget="collapse" id="bc_w3_btn"><i class="fa fa-minus"></i></button></div></div><div class="box-body"><div class="features-block"><link href="/css/styles/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+<script src="/assets/2f95c774/jquery.js?v=1616495652"></script>
+<script src="/js/jquery.magnific-popup.js"></script>    <ul class="timeline timeline-inverse">
+                <!-- timeline time label -->
+        <li class="time-label">
+            <span class="bg-gray">
+                Spalis, 2020                </span>
+        </li>
+        <!-- /.timeline-label -->
+                        <!-- timeline item -->
+            <li>
+                <i class="fa fa-bullhorn bg-gray"></i>
+                <div class="timeline-item">
+                    <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        prieš 6 mėnesių                        </span>
+                    <h3 class="timeline-header">IT paslaugos</h3>
+                                            <div class="timeline-body">
+                        Nuo šiol programinę įrangą atsisiuntimui ir naudojamą auditorijose galite rasti meniu punkte „IT paslaugos“.                                                            <br>
+                                                                                                        <a class="test-popup-link" href="/dashboard/site/get-features-file?act=0&amp;id=21">
+                                        <img src="data:image/png;base64, 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" alt="21" class="margin">
+                                    </a>
+                                                                                                                    </div>
+                                                                </div>
+            </li>
+            <!-- END timeline item -->
+                            <!-- timeline time label -->
+        <li class="time-label">
+            <span class="bg-gray">
+                Kovas, 2020                </span>
+        </li>
+        <!-- /.timeline-label -->
+                        <!-- timeline item -->
+            <li>
+                <i class="fa fa-bullhorn bg-gray"></i>
+                <div class="timeline-item">
+                    <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        prieš 1 metus                        </span>
+                    <h3 class="timeline-header">Nuotolinio darbo su VGTU sistemomis būdai</h3>
+                                                                        <div class="timeline-footer">
+                                                                <a href="/dashboard/site/get-features-file?act=1&amp;id=6" target="_blank">
+                                                                                <i class="fa fa-file-pdf-o"></i>
+                                                                            Nuotolinio darbo su VGTU sistemomis būdai                                    </a>
+                                                        </div>
+                                        </div>
+            </li>
+            <!-- END timeline item -->
+                        <!-- timeline item -->
+            <li>
+                <i class="fa fa-bullhorn bg-gray"></i>
+                <div class="timeline-item">
+                    <span class="time">
+                        <i class="fa fa-clock-o"></i>
+                        prieš 1 metus                        </span>
+                    <h3 class="timeline-header">Konferencijų programos ZOOM naudojimosi instrukcija</h3>
+                                                                        <div class="timeline-footer">
+                                                                <a href="/dashboard/site/get-features-file?act=1&amp;id=11" target="_blank">
+                                                                                <i class="fa fa-file-pdf-o"></i>
+                                                                            ZOOM instrukcija studentams                                    </a>
+                                                        </div>
+                                        </div>
+            </li>
+            <!-- END timeline item -->
+                        <li>
+        <i class="fa fa-clock-o bg-gray"></i>
+    </li>
+</ul>
+<script src="/modules/dashboard/assets/js/features.js"></script>
+<script src="/assets/1c2d5410/lt.js?v=1619716973"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script></div></div></div></div>    </div>
+<div class="col-md-3">
+    <div class="events-box"><div id="bc_w4" class="box box-default"><div class="box-header with-border"><h3 class="box-title">Artimiausi renginiai</h3><div class="box-tools pull-right"><button class="btn btn-default btn-xs" data-widget="collapse" id="bc_w4_btn"><i class="fa fa-minus"></i></button></div></div><div class="box-body"><div class="events-block"><div class="events_list">
+        <div class="callout callout-warning">
+        Nėra renginių        </div>
+    <a href="https://vgtu.lt/universitetas/ivykiai/26669" class="news_portal_link" target="_blank" title="Visi renginiai">
+    Visi renginiai    </a>
+</div>
+<script src="/assets/1c2d5410/lt.js?v=1619716973"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script></div></div></div></div><div class="banners">
+<a href="https://play.google.com/store/apps/details?id=lt.vgtu.manovgtu" target="_blank" class="no_color_for_banner">
+    <div class="info-box">
+        <span class="info-box-icon bg-aqua info-box-light-blue2">
+            <img src="/images/googleplay-logo-r.png" alt="Google Play" class="info-box-img-st">
+        </span>
+        <div class="info-box-content">
+        <span class="info-box-text">
+            Atsisiųskite „Mano VGTU“ programėlę            </span>
+            <span class="info-box-number">
+            Google Play
+        </span>
+        </div>
+    </div>
+</a>
+<a href="https://apps.apple.com/app/id1473812047" target="_blank" class="no_color_for_banner">
+    <div class="info-box">
+        <span class="info-box-icon bg-aqua info-box-blue2">
+            <img src="/images/app_store.png" alt="App Store" class="info-box-img-st">
+        </span>
+        <div class="info-box-content">
+        <span class="info-box-text">
+            Atsisiųskite „Mano VGTU“ programėlę            </span>
+            <span class="info-box-number">
+            App Store
+        </span>
+        </div>
+    </div>
+</a>
+<a href="https://moodle.vgtu.lt" target="_blank" class="no_color_for_banner">
+    <div class="info-box">
+    <span class="info-box-icon bg-aqua info-box-orange2">
+    <img src="/images/moodle_icon.png" alt="Moodle" class="info-box-img-st">
+    </span>
+        <div class="info-box-content">
+        <span class="info-box-text">
+            Virtuali mokymosi aplinka            </span>
+            <span class="info-box-number">
+            MOODLE            </span>
+        </div>
+    </div>
+</a>
+<a href="https://pagalba.vgtu.lt/helpdesk" target="_blank" class="no_color_for_banner">
+    <div class="info-box">
+        <span class="info-box-icon bg-aqua info-box-light-green">
+            <i class="fa fa-question"></i>
+        </span>
+        <div class="info-box-content">
+        <span class="info-box-text">
+            2744918 (9918), pagalba@vgtu.lt
+        </span>
+            <span class="info-box-number">
+            IT pagalba            </span>
+        </div>
+    </div>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer class="main-footer">
+<div class="color_line footers"></div>
+&nbsp;
+<ul class="footer-wrapper">
+                <li class="faculty_ft">
+            <p style="color: #3c8dbc;">
+                <a href="http://www.vgtu.lt/fakultetai/15" class="faculty" target="_blank">
+                    Fundamentinių mokslų fakultetas                    </a>
+                &nbsp; |</p>
+        </li>
+            <li class="social-icons">
+        <a class="social-fb" href="https://www.facebook.com/vgtuuniversity" target="_blank"></a>
+        <a class="social-twitter" href="https://twitter.com/VGTU_university" target="_blank"></a>
+        <a class="social-youtube" href="http://www.youtube.com/user/manovgtu" target="_blank"></a>
+        <a class="social-linkedin" href="https://www.linkedin.com/edu/vilnius-gediminas-technical-university-14844" target="_blank"></a>
+        <a class="social-instagram" href="http://instagram.com/vgtu_university" target="_blank"></a>
+        <a class="social-pinterest" href="https://www.pinterest.com/vgtu_university/" target="_blank"></a>
+    </li>
+    <li class="copyrights">© VGTU ITSC 2021</li>
+</ul>
+</footer>
+<aside class="control-sidebar control-sidebar-light" style="position: fixed; max-height: 100%; overflow: auto; padding-bottom: 50px;">
+<div class="tab-content">
+                        <br>
+        <div>
+            <h4 class="control-sidebar-heading">
+                Puslapio gidas                </h4>
+            <a onclick="startTour()">
+                <div class="tour">
+                    <i class="fa fa-lightbulb-o tour-icon bg-yellow"></i>
+                    <span>Mano VGTU gidas</span>
+                </div>
+            </a>
+        </div>
+            <h4 class="control-sidebar-heading">
+        Temos        </h4>
+    <ul class="list-unstyled clearfix">
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-blue">
+                <div>
+                    <span class="skin-span-block span-20-7 head-blue"></span>
+                    <span class="bg-light-blue skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-blue"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Mėlyna                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-black">
+                <div class="clearfix skin-d-shad">
+                    <span class="skin-span-block span-20-7 head-black"></span>
+                    <span class="skin-span-block span-80-7 head-black"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-black"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Juoda                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-purple">
+                <div>
+                    <span class="bg-purple-active skin-span-block span-20-7"></span>
+                    <span class="bg-purple skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Violetinė                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-green">
+                <div>
+                    <span class="bg-green-active skin-span-block span-20-7"></span>
+                    <span class="bg-green skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Žalia                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-red">
+                <div>
+                    <span class="bg-red-active skin-span-block span-20-7"></span>
+                    <span class="bg-red skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Raudona                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-yellow">
+                <div>
+                    <span class="bg-yellow-active skin-span-block span-20-7"></span>
+                    <span class="bg-yellow skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Geltona                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-blue-light">
+                <div>
+                    <span class="skin-span-block span-20-7 head-blue"></span>
+                    <span class="bg-light-blue skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey-ddd"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Mėlyna šviesi                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-black-light">
+                <div class="clearfix skin-d-shad">
+                    <span class="skin-span-block span-20-7 head-grey-dd"></span>
+                    <span class="skin-span-block span-80-7 head-grey-dd"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey-ddd"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Pilka šviesi                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-purple-light">
+                <div>
+                    <span class="bg-purple-active skin-span-block span-20-7"></span>
+                    <span class="bg-purple skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey-ddd"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Violetinė šviesi                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-green-light">
+                <div>
+                    <span class="bg-green-active skin-span-block span-20-7"></span>
+                    <span class="bg-green skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey-ddd"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Žalia šviesi                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-red-light">
+                <div>
+                    <span class="bg-red-active skin-span-block span-20-7"></span>
+                    <span class="bg-red skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey-ddd"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Raudona šviesi                </p>
+        </li>
+        <li class="skins-list">
+            <a class="clearfix full-opacity-hover skin-link" href="javascript:void(0)" data-skin="skin-yellow-light">
+                <div>
+                    <span class="bg-yellow-active skin-span-block span-20-7"></span>
+                    <span class="bg-yellow skin-span-block span-80-7"></span>
+                </div>
+                <div>
+                    <span class="skin-span-block span-20-20 head-grey-ddd"></span>
+                    <span class="skin-span-block span-80-20 head-grey-d"></span>
+                </div>
+            </a>
+            <p class="text-center no-margin text">
+                Geltona šviesi                </p>
+        </li>
+    </ul>
+</div>
+</aside>
+<div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+    <div class="scroll-up-btn img-circle bg-gray " onclick="scrollUp()" title="Į viršų">
+        <div class="fa fa-chevron-up"></div>
+    </div>
+
+                <div class="button" id="feedback-btn">
+            <a id="feedback-click" onclick="newFeedbackForm('/feedback/form'); return false;" href="#">
+                <i class="fa fa-comments-o action-btn-size" aria-hidden="true"></i>
+                Reikia pagalbos? (bendrabučių, studijų ir kitais klausimais)                </a>
+            <a id="feedback-close" onclick="removeButton();" href="javascript:void(0)">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+        </div>
+<script src="/modules/dashboard/assets/js/functions.js"></script>
+<script src="/modules/dashboard/assets/js/tour.js"></script>
+<script src="/js/all.js"></script>
+<script src="/js/easyResponsiveTabs.js"></script>
+<script src="/js/bluebird.min.js"></script>
+<script src="/modules/notifications/assets/js/notifications.js"></script>
+<script src="/assets/1c2d5410/lt.js?v=1619716971"></script>
+<script src="/assets/7455693c/javascripts/md5.js?v=1616495642"></script>
+<script src="/assets/7455693c/javascripts/lajax.js?v=1616495642"></script>
+<script src="/assets/2f95c774/jquery.js?v=1616495652"></script>
+<script src="/assets/52b05feb/yii.js?v=1616495652"></script>
+<script src="/assets/80a856b9/jquery.cookie.js?v=1616495898"></script>
+<script src="/assets/43c56c4/admlteext.js?v=1616495898"></script>
+<script src="/js/bootstrap-tabs-x.js"></script>
+<script src="/js/icheck.js"></script>
+<script src="/js/script.js?v=1615288306"></script>
+<script src="/js/jquery_cookie.js?v=1615288306"></script>
+<script src="/js/commonTabs.js?v=1615288306"></script>
+<script src="/js/jquery.mCustomScrollbar.concat.min.js?v=1615288306"></script>
+<script src="/js/jquery.slimscroll.min.js?v=1615288306"></script>
+<script src="/js/easyResponsiveTabs.js?v=1615288306"></script>
+<script src="/js/browserVersionCheck.js?v=1615288306"></script>
+<script src="/assets/6a06d98b/js/bootstrap.min.js?v=1616495652"></script>
+<script src="/assets/73169e0/js/app.min.js?v=1616495652"></script>
+<script src="/assets/73169e0/js/demo.js?v=1616495652"></script>
+<script src="/assets/caeb2484/js/feedback.js?v=1616495652"></script>
+<script src="/js/lectureTime.js"></script>
+<script src="/assets/acf6eda3/javascripts/language-picker.min.js?v=1616495652"></script>
+<script>jQuery(function ($) {
+$.ajax({
+                    type: 'POST',
+                    datatype: 'json',
+                    cache: true,
+                    async: true,
+                    url: '/dashboard/site/students-timetable',
+                    success: function (data) {
+                        if (data !== null && data.length !== 0) {
+                            $('.students-timetable-box .students-timetable-block').html(JSON.parse(data));
+                        }
+                        $('#audit-overlay-student').hide();
+                    },
+                    error: function () {
+                        $('#audit-overlay-student').hide();
+                    },
+                    beforeSend: function () {
+                        $('#audit-overlay-student').show();
+                    }
+            });
+$.ajax({
+                type: 'POST',
+                datatype: 'json',
+                cache: true,
+                async: true,
+                url: '/dashboard/site/news',
+                success: function (data) {
+                     if (data !== null && data.length !== 0) {
+                         $('.news-box .news-block').html(JSON.parse(data));
+                         $('.news-box').show();
+                     }
+                     $('#audit-overlay-news').hide();
+                },
+                error: function () {
+                     $('#audit-overlay-news').hide();
+                },
+                beforeSend: function () {
+                     $('#audit-overlay-news').show();
+                }
+        });
+$.ajax({
+                    type: 'POST',
+                    datatype: 'json',
+                    cache: true,
+                    async: true,
+                    url: '/dashboard/site/participate',
+                    success: function (data) {
+                        if (data !== null && data.length !== 0) {
+                            $('.learn-participate-box .learn-participate-block').html(JSON.parse(data));
+                        }
+                        $('#audit-overlay-participate').hide();
+                    },
+                    error: function () {
+                        $('#audit-overlay-participate').hide();
+                    },
+                    beforeSend: function () {
+                        $('#audit-overlay-participate').show();
+                    },
+                    complete: function () {
+                        let key = $('.beActive').find('tbody').find('tr');
+                        $.each(key, function (index, value) {
+                            let id = $(value).find('span').data('id');
+                            let title = $(value).find('span').data('title');
+                            $(value).addClass('showModalButton career_inner').attr({
+                                'title': title,
+                                'value': getHost() + '/vgtulife/adverts?id=' + id
+                            });
+                            $(value).find('span').append(title);
+                        });
+                    }
+            });
+$.ajax({
+                type: 'POST',
+                datatype: 'json',
+                cache: true,
+                async: true,
+                url: '/dashboard/site/joffers',
+                success: function (data) {
+                     if (data !== null && data.length !== 0) {
+                            $('.job-offers-box .job-offers-block').html(JSON.parse(data));
+                            $('.job-offers-box').show();
+                     }
+                     $('#audit-overlay-offers').hide();
+                },
+                error: function () {
+                     $('#audit-overlay-offers').hide();
+                },
+                beforeSend: function () {
+                     $('#audit-overlay-offers').show();
+                }
+            });
+$.ajax({
+                type: 'POST',
+                datatype: 'json',
+                cache: true,
+                async: true,
+                url: '/dashboard/site/features',
+                success: function (data) {
+                     if (data !== null && data.length !== 0) {
+                            $('.features-box .features-block').html(JSON.parse(data));
+                     }
+                     $('#features-overlay').hide();
+                },
+                error: function () {
+                     $('#features-overlay').hide();
+                },
+                beforeSend: function () {
+                     $('#features-overlay').show();
+                }
+        });
+$.ajax({
+                type: 'POST',
+                datatype: 'json',
+                cache: true,
+                async: true,
+                url: '/dashboard/site/events',
+                success: function (data) {
+                     if (data !== null && data.length !== 0) {
+                            $('.events-box .events-block').html(JSON.parse(data));
+                     }
+                     $('#audit-overlay-calendar').hide();
+                },
+                error: function () {
+                     $('#audit-overlay-calendar').hide();
+                },
+                beforeSend: function () {
+                     $('#audit-overlay-calendar').show();
+                }
+        });
+jQuery('#notification-modal').modal({"show":false,"keyboard":false});
+});</script>    <script>
+    // Goodle analytics code
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-8166777-4', 'auto');
+    ga('send', 'pageview');
+
+    $(window).load(function () {
+        var url = '/site/index';
+        $('#check').modal('show');
+
+    });
+
+    // Modal code
+    $(document).on('click', '.showModalButton', function () {
+        var spinner = loadSpinner();
+        $('#modal').find('.modal-body').html(spinner);
+
+        if ($('#modal').modal('show').isShown) {
+            $('#modal').find('.modal-body').load($(this).attr('value'));
+            document.getElementById('modalHeader').innerHTML = '<span>' + $(this).attr('title') + '</span>';
+        } else {
+            $('#modal').modal('show').find('.modal-body').load($(this).attr('value'));
+            console.log($(this).attr('title'));
+            document.getElementById('modalHeader').innerHTML = '<span>' + $(this).attr('title') + '</span>';
+        }
+    });
+
+    $(document).on('click', '.responsive-table tr', function () {
+        if ($(this).find('span').data('name') === 'showModal') {
+            let spinner = loadSpinner();
+            let modal = $('#modal');
+            modal.find('.modal-body').html(spinner);
+
+            if (modal.modal('show').isShown) {
+                modal.find('.modal-body').load($(this).find('span').data('url'));
+            } else {
+                modal.modal('show').find('.modal-body').load($(this).find('span').data('url'));
+            }
+
+            $('#modalHeader').html('<span>' + $(this).find('span').data('title') + '</span>');
+        }
+    });
+
+    function loadSpinner() {
+        return '<div id=\'modalContent\'><div style=\'text-align:center\'><i class="fa fa-refresh fa-spin" style="font-size: 30px;"></i></div></div>';
+    }
+</script>
+
+
+
+<div id="modal" class="fade modal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div id="modalHeader" class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<span id="modalHeaderTitle"></span>
+</div>
+<div class="modal-body">
+<div id="modalContent"><div style="text-align:center"><i class="fa fa-refresh fa-spin" style="font-size: 30px;"></i></div></div>
+</div>
+<div class="modal-footer">
+<a href="#" class="btn btn-vgtu-close" data-dismiss="modal">Uždaryti</a>
+</div>
+</div>
+</div>
+</div></body></html>

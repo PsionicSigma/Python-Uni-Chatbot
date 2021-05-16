@@ -1,0 +1,43 @@
+{ "intents":[
+        {"tag": "mano_rezultatai",
+        "uzklausos": ["kur galiu rasti savo tarpinius ivertinimus", "kur yra rasomi mano tarpiniai rezultatai", "kur galiu pamatyti mano tarpinius", "kur galiu pamatyti savo semestro rezultatus", "noriu pamatyti savo rezultatus", "kur galiu rasti mano sio semestro rezultatus", "kur galiu palyginti savo rezultatus su grupioku rezultatais", "ar galiu palyginti savo grupes rezultatus", "noriu palyginti savo rezultatus su grupe"],
+        "atsakymas": ["Visus savo rezultatus rasti ir palyginti galite prisijungę prie mano.vgtu.lt svetainės „Studijos > Mano rezultatai“ skiltyje (adresu https://mano.vgtu.lt/results/site)"]
+        },
+        {"tag": "stipendiju_ismoka",
+        "uzklausos": ["kur rasti ismoketas stipendijas", "kokios yra stipendiju ismokos", "kokio dydzio stipendija gaunu", "noriu zinoti kokias stipendijas gaunu", "kur rasti kokios man ismokamos stipendijos", "kokio dydzio stipendija", "kokia sio menesio stipendija", "kokia stipendija gavau"],
+        "atsakymas": ["Informaciją apie jums išmokėtas stipendijas galite rasti prisijungę prie mano.vgtu.lt svetainės „Mano dokumentai > Stipendijų išmokos“ skiltyje (adresu https://mano.vgtu.lt/documentation/documentation/scholarship)"]
+        },
+        {"tag": "stipendiju_salygos",
+        "uzklausos": ["noriu suzinoti apie stipendiju skyrimo salygas", "kokios yra stipendiju salygos", "kur galiu rasti stipendiju skyrimo salygas", "noriu rasti stipendiju salygas", "kaip rasti informacijos apie stipendiju skyrimo salygas"],
+        "atsakymas": ["Apie stipendijas galite sužinoti prisijungę prie mano.vgtu.lt svetainės „Studijų tvarka > Stipendijos“ skiltyje ir vsf.lrv.lt svetainės „Titulinis > Studentams“ skiltyje (adresu https://vsf.lrv.lt/lt/studentams). VGTU studentai turi 1)būti išlaikę visus galutinius atsiskaitymus per pirmus laikymus; 2)neturėti skolų; 3)surinkti pakankamai aukštą svertinį vidurkį (žr. „Mano rezultatai“, tiksli riba nežinoma, bet manoma ~9.2)"]
+        },
+        {"tag": "egzaminai",
+        "uzklausos": ["noriu zinoti apie egzaminus", "kur yra surasyti egzaminai", "kur galiu rasti savo egzaminu sarasa", "kur yra mano egzaminai", "kur galiu pamatyti savo egzaminus"],
+        "atsakymas": ["Informaciją apie jūsų egzaminus galite rasti prisijungę prie mano.vgtu.lt svetainės „Studijos > Egzaminų tvarkaraštis“ skiltyje (adresu https://mano.vgtu.lt/examstimetable/exams), arba „Studijos > Šis semestras“ skiltyje pasirinkę semestro dalyką ir „Paskaitų tvarkaraštis“ kortelę"]
+        },
+        {"tag": "kontaktai",
+        "uzklausos": ["kur galiu rasti destytoju kontaktus", "kur yra darbuotoju kontaktai", "kur rasti personalo kontaktus", "kur galeciau rasti dekanato kontaktus", "kur galima rasti prodekanu kontaktus", "kur yra katedros kontaktai", "kur galiu rasti fakulteto kontaktus", "kur rasti kontaktus", "ar yra vgtu svetaineje kontaktai", "kur yra kontaktai"],
+        "atsakymas": ["Dėstytojų ir katedros/skyriaus kontaktus galite rasti prisijungę prie mano.vgtu.lt svetainės „Studijos > Šis semestras“ skiltyje pasirinkę semestro dalyką ir „Kontaktai“ kortelę. Taip pat visus kontaktus galite rasti mano.vgtu.lt svetainės „Gyvenimas VGTU > Kontaktai > VGTU kontaktai“ skiltyje arba vilniustech.lt svetainės „Kontaktai“ skiltyje, esančioje svetainės apačioje (adresu https://vilniustech.lt/kontaktai/-pagrindiniai-kontaktai/519)"]
+        },
+        {"tag": "prasymai",
+        "uzklausos": ["kur galiu pateikti prasymus", "kur galima pateikti ivairius prasymus", "kur galeciau pateikti prasyma del", "kur galiu uzpildyti prasymus vgtu", "kur galiu rasti prasymu anketas", "kur galeciau pamatyti savo prasymu statusus", "kur galiu rasti pateiktu prasymu busenas"],
+        "atsakymas": ["Prašymų formas galite rasti, užpildyti ir pateikti, bei prašymų būsenas stabėti prisijungę prie mano.vgtu.lt svetainės „Mano dokumentai > Prašymai“ skiltyje (adresu https://mano.vgtu.lt/requests/site), taip pat prašymų blankus galite rasti „Mano dokumentai > Kita“ skiltyje (adresu https://mano.vgtu.lt/requests/other)"]
+        },
+        {"tag": "zemelapis",
+        "uzklausos": ["negaliu rasti vgtu zemelapio", "kur vgtu zemelapis", "kur vgtu zemelapiai", "ar yra vgtu svetaineje zemelapiai",  "ar yra vgtu svetaineje yra zemelapiai", "kur rasti zemelapi", "nerandu zemelapiu", "kur vgtu svetaineje rasti zemelapius", "zemelapis vgtu svetaineje"],
+        "atsakymas": ["VGTU žemėlapį galite rasti prisijungę prie mano.vgtu.lt svetainės „Gyvenimas VGTU > VGTU žemėlapiai“ skiltyje arba https://mano.vgtu.lt/vgtulife/maps"]
+        },
+        {"tag": "sio_semestro_dalykai",
+        "uzklausos": ["kaip rasti sio semestro dalykus", "kur pamatyti sio semestro dalykus", "kur rasti sio semestro studiju programa", "kur yra sio semestro dalyku sarasas", "kur rasti sio semestro dalyku sarasa", "neiseina rasti sio semestro studiju programos"],
+        "atsakymas": ["Šio semestro dalykus rasite „Studijos > Šis semestras > Studijų programa“ skiltyje arba https://mano.vgtu.lt/thissemester/site/loadindex"]
+        },
+        {"tag": "visa_studiju_programa",
+        "uzklausos": ["kur paziureti studiju dalykus", "kaip suzinoti studiju dalykus", "kur yra dalyku sarasas", "kur rasti studiju dalyku sarasa", "kur rasti pilna studiju dalyku programa", "kur suzinoti studiju programa"],
+        "atsakymas": ["Visą studojų programą rasite „Studijos > Šis semestras > Studijų programa“ skiltyje arba https://mano.vgtu.lt/thissemester/site/loadindex"]
+        },
+        {"tag": "darbas",
+        "uzklausos": ["ar vgtu yra darbo pasiulymai", "kur rasti darbo pasiulimus", "kur rasti darbo skelbimus", "ar galima rasti darba per vgtu", "kokios karjeros galimybes siulo vgtu", "kur rasti darbo skelbimus", "koki darba siulo vgtu", "kokie yra darbo skelbimai siuo metu", "kur rasti darbo skelbimui studentams", "kur perziureti darbo pasiulimus studentams", "kur isidarbinti studentui"],
+        "atsakymas": ["Darbo pasiūlimus rasite „Mano karjera > Darbo pasiūlymai“ skiltyje arba https://mano.vgtu.lt/mycareer/jobs"]
+        }
+]
+}

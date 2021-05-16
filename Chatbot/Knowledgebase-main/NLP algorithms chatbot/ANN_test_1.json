@@ -1,0 +1,84 @@
+{ "intents":[
+    {"tag": "mano_tvarkarastis",
+    "uzklausos": ["noriu pamatyti savo tvarkarasti", "kur galiu rasti savo tvarkarasti", "kur yra mano tvarkarastis"]
+    },
+    {"tag": "vgtu_naujenos",
+    "uzklausos": ["kas naujo ivyko universitete", "noriu paziureti universiteto naujenas", "kokios paskutines vgtu naujenos"]
+    },
+    {"tag": "studiju_kalendorius",
+    "uzklausos": ["ar yra studiju kalendorius", "kur yra studiju kalendorius", "kur galiu rasti siu metu studiju kalendoriu"]
+    },
+    {"tag": "grupes_tvarkarastis",
+    "uzklausos": ["noriu paziureti mano grupes tvarkarasti", "kur galiu rasti grupes tvarkarasti", "kur galiu rasti mano grupes tvarkarasti"]
+    },
+    {"tag": "studiju_programa",
+    "uzklausos": ["kur paziureti studiju dalykus", "kaip suzinoti studiju programa", "kur yra programos dalyku sarasas"]
+    },
+    {"tag": "mano_rezultatai",
+    "uzklausos": ["kur galiu palyginti savo rezultatus su grupioku ivertinimus", "ar galiu palyginti savo grupes ivertinimus", "noriu palyginti savo ivertinimus su grupe"]
+    },
+    {"tag": "stipendiju_ismoka",
+    "uzklausos": ["kur rasti ismoketas stipendijas", "kokios yra stipendiju ismokos", "kokio dydzio stipendija gaunu"]
+    },
+    {"tag": "stipendiju_salygos",
+    "uzklausos": ["kokios yra stipendiju skyrimo salygos", "kada skyriama stipendija", "noriu suzinoti apie stipendiju skyrimo salygas"]
+    },
+    {"tag": "egzaminai",
+    "uzklausos": ["noriu zinoti apie egzaminus", "kur yra mano egzaminai", "kur galiu pamatyti savo egzaminus"]
+    },
+    {"tag": "kontaktai",
+    "uzklausos": ["kur galiu rasti destytoju kontaktus", "kur yra darbuotoju kontaktai", "kur rasti personalo kontaktus"]
+    },
+    {"tag": "prasymai",
+    "uzklausos": ["kur galiu pateikti prasymus", "kur galima pateikti ivairius prasymus", "kur galeciau pateikti prasyma del"]
+    },
+    {"tag": "zemelapis",
+    "uzklausos": ["negaliu rasti vgtu zemelapio", "kur vgtu zemelapis",  "ar yra vgtu svetaineje yra zemelapiai"]
+    },
+    {"tag": "sio_semestro_dalykai",
+    "uzklausos": ["kur rasti sio semestro studiju programa", "kur yra sio semestro dalyku sarasas", "kur rasti sio semestro dalyku sarasa"]
+    },
+    {"tag": "visa_studiju_programa",
+    "uzklausos": ["kur yra dalyku sarasas", "kur rasti studiju dalyku sarasa", "kur rasti pilna studiju dalyku programa"]
+    },
+    {"tag": "darbas",
+    "uzklausos": ["kur gali isidarbinti studentas", "vgtu idarbinimo pasiulymai", "vgtu karjera studentams"]
+    },
+    {"tag": "praktika",
+    "uzklausos": ["kur galima rasti praktika", "kokia praktika siulo vgtu", "ar vgtu yra praktikos pasiulymai"]
+    },
+    {"tag": "paskaitu_laikas",
+    "uzklausos": ["kada prasideda pietu pertrauka", "kelinta valanda pirma paskaita", "kada prasideda antra paskaita"]
+    },
+    {"tag": "atsiskaitynu_tvarka",
+    "uzklausos": ["kaip vyksta atsiskaitymai", "kokia yra atsiskaitymu tvarka", "kaip vertinami atsiskaitymai"]
+    },
+    {"tag": "sesijos_tvarka",
+    "uzklausos": ["kaip rasti sesijos tvarkarasti", "kaip organizuojama sesija", "koks sesijos tvarkarastis"]
+    },
+    {"tag": "darbu_reikalavimai",
+    "uzklausos": ["kokie yra magistro rengimo reikalavimai", "kokie baigiamojo darbo rengimo reikalavimai", "kokie darbu rengimo reikalavimai"]
+    },
+    {"tag": "sablonas",
+    "uzklausos": ["kaip atrodo baigiamojo darbo prezentacija anglu kalba", "kaip atrodo baigiamojo bakalauro prezentacija lietuviu kalba", "kaip atrodo baigiamojo magistro prezentacija anglu kalba"]
+    },
+    {"tag": "ivertinimo_tvarka",
+    "uzklausos": ["kokia vgtu darbu vertinimo tvarka", "kaip vertinami darbai", "kaip ivertinami darbai"]
+    },
+    {"tag": "apeliacijos",
+    "uzklausos": ["del kokiu priezasciu galiu teikti apeliacija", "kokia yra apeliaciju tvarka", "kokia tvarka rasomos apeliacijos"]
+    },
+    {"tag": "baigiamieji_darbai_tvarka",
+    "uzklausos": ["kokia magistro darbo tvarka", "kokia yra baigiamuju atsiskaitymo tvarka", "kokia bendra baigiamuju darbu atsiskaitymo tvarka"]
+    },
+    {"tag": "spausdinimo_paslaugos",
+    "uzklausos": ["ar yra universitete yra spausdinimo paslaugos", "ar yra vgtu teikia spausdinimo paslaugas", "kur vgtu galima atspausdinti darba"]
+    },
+    {"tag": "spausdinimo_kaina",
+    "uzklausos": ["kiek kainuoja darbo spausdinimas", "kiek kainuoja dokumento spausdinimas", "kiek kainuoja spausdinimo paslaugos"]
+    },
+    {"tag": "nomatch",
+    "uzklausos": ["kur yra atsiskaitymo lapelis", "kur rasti studiju mainus", "kokios yra it paslaugos puslapyje"]
+    }
+]
+}

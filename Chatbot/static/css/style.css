@@ -1,0 +1,120 @@
+#chatBox {
+    background-color: #ffffff;
+    width: 10cm!important;
+    height: 70%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#textBoxInput {
+    border: none;
+    border-bottom: 5px solid aqua;
+    border-radius: 5px;
+}
+
+#buttonSendInput {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: right;
+    line-height: 30px;
+
+    background-color: #f39c12!important;
+    border-color: #f39c12!important;
+    border-radius: 5px!important;
+}
+
+#redButton {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: left;
+    line-height: 30px;
+    width: 50%!important;
+    background-color: #003665!important;
+    border-color: #003665!important;
+    border-radius: 5px!important;
+}
+
+#admButton {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: right;
+    line-height: 30px;
+    width: 50%;
+    background-color: #f39c12!important;
+    border-color: #f39c12!important;
+    border-radius: 5px!important;
+}
+
+#exitButton {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: right;
+    line-height: 30px;
+
+    background-color: #f39c12!important;
+    border-color: #f39c12!important;
+    border-radius: 5px!important;
+}
+
+.userText {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: right;
+    line-height: 18px;
+}
+.userText span {
+    background-color: #003665;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.botText {
+    color: white;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: left;
+    line-height: 18px;
+}
+.botText span {
+    background-color: #f39c12;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.admText {
+    color: #003665;
+    border-width: 3px;
+    font-family: monospace;
+    font-size: 12px;
+    text-align: right;
+    line-height: 18px;
+}
+.admText span {
+    background-color: #ffffff;
+    border-color: solid #003665;
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.chatbotWindow {
+    /* background-color: #ffffff; */
+    background-color: #003665;
+    border: 5px solid #003665;
+    border-radius: 5px;
+    position: fixed;
+    /* overflow-y: scroll; */
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 50%;
+} 

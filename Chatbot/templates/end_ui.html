@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/style.css?version=9">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    </head>
+    <body style="background-image: url('static/img/mano_vgtu_fonui.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+        <div class="chatbotWindow">
+            <div id="chatBox">
+                <p class="botText"><span>Sveiki!</span></p>
+            </div>
+            <div id="userBox">
+                <input id="textBoxInput" class="form-control" type="text" name="msg" placeholder="Tekstas">
+                <input id="buttonSendInput" class="btn btn-success form-control" type="submit" value="Siūsti">
+                <!-- class="sendButton" class="btn btn-success form-control" -->
+            </div>
+        </div>
+        <script type="text/javascript">
+            var socket = io.connect('http://127.0.0.1:5000/usr');
+            var chat_mode = 'chatbot';
+
+            socket.on('connect', function () {
+
+                socket.emit('user_connected', '20173714')
+            })
+        
+            socket.on('bot_respond', function (status, response) {
+                var botTextHtml;
+                if(status == 0) botTextHtml = '<p class="botText"><span>' + response + '</span></p>';
+                else botTextHtml = '<p class="botText"><span>' + response + '</span><input id="redButton" class="btn btn-success form-control" type="submit" value="pagalba.vgtu.lt" onclick=redir_to_helpdesk()><input id="admButton" class="btn btn-success form-control" type="submit" value="Kviesti personalą" onclick=join_room()></p>'
+                $("#chatBox").append(botTextHtml);
+                document.getElementById('chatBox').scrollIntoView(false) //{block: 'start', behavior: 'smooth'}
+                //objDiv.scrollTop = objDiv.scrollHeight;
+            });
+
+            socket.on('adm_say', function (message) {
+                let admTextHtml = '<p class="admText" style="text-align: left;"><span>' + message + '</span></p>';
+                $("#chatBox").append(admTextHtml);
+                document.getElementById('chatBox').scrollIntoView(false)
+            })
+
+            function getResponse() {
+                let userText = $("#textBoxInput").val();
+                let userTextHtml = '<p class="userText"><span>' + userText + '</span></p>';
+                $("#textBoxInput").val("");
+                if(chat_mode=='chatbot') socket.emit('ask_bot', userText, '20173714');
+                else socket.emit('user_say', userText);
+                $("#chatBox").append(userTextHtml);
+                document.getElementById('chatBox').scrollIntoView(false);
+            };
+
+            function join_room() {
+                if(chat_mode!='adm') {
+                    chat_mode = 'adm';
+                    socket.emit('user_join', '0', 'Testaitis', '20173714');
+                    buttonHtml = '<input id="exitButton" class="btn btn-success form-control" type="submit" value="Grįžti prie autoatsakiklio" onclick=leave_room()></p>';
+                    $("#chatBox").append(buttonHtml);
+                    document.getElementById('chatBox').scrollIntoView(false);
+                }
+            };
+
+            function leave_room() {
+                if(chat_mode!='chatbot') {
+                    chat_mode = 'chatbot';
+                    socket.emit('user_leave', '1', 'Testaitis', '20173714');
+                    buttonHtml = '<p>Atsijungta</p>';
+                    $("#chatBox").append(buttonHtml);
+                    document.getElementById('chatBox').scrollIntoView(false);
+                }
+            };
+
+            function redir_to_helpdesk() {
+                //socket.emit('redirect_to_helpdesk', '0');
+                window.open("https://pagalba.vgtu.lt/");
+            };
+
+            // function getResponse() {
+            //     let userText = $("#textBoxInput").val();
+            //     let userTextHtml = '<p class="userText"><span>' + userText + '</span></p>';
+            //     $("#textBoxInput").val("");
+            //     $("#chatBox").append(userTextHtml);
+            //     document.getElementById('userBox').scrollIntoView({block: 'start', behavior: 'smooth'});
+            //     $.get("/usr/get", { msg: userText }).done(function(data) {
+            //         var botTextHtml = '<p class="botText"><span>' + data + '</span></p>';
+            //         $("#chatBox").append(botTextHtml);
+            //         document.getElementById('userBox').scrollIntoView({block: 'start', behavior: 'smooth'});
+            //     });
+            // }
+
+            $("#textBoxInput").keypress(function(e) {
+                 if(e.which == 13 && $("#textBoxInput").val()!="") {
+                    getResponse();
+                }
+            });
+
+            $("#buttonSendInput").click(function() {
+                if($("#textBoxInput").val()!="") {
+                    getResponse();
+                }
+            });
+
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>

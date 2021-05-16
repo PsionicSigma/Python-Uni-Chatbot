@@ -1,0 +1,43 @@
+{ "intents":[
+	{"tag": "sveikinimas",
+		"uzklausos": ["laba diena", "labas vakaras", "labas rytas", "sveiki none", "sveika none", "sveikas none", "hey none", "hello none", "hi none"],
+		"atsakymas": ["Laba diena, kuo galiu padėti?", "labas rytas, reikia pagalbos?", "Sveiki, kuo galiu padėti?", "Labas vakaras, reikia pagalbos?"]
+		},
+		{"tag": "atsisveikinimas",
+		"uzklausos": ["viso gero", "gero vakaro", "viso none", "geros dienos", "Iki none", "Iki kito karto", "iki pasimatymo", "iki rytojaus"],
+		"atsakymas": ["Viso gero"]
+		},
+		{"tag": "dekojimas",
+		"uzklausos": ["aciu none", "dekui none", "aciu labai", "labai padejo", "aciu uz informacija", "labai naudona", "supratau aciu"],
+		"atsakymas": ["Malonu buti naudingam!"]
+		},
+		{"tag": "vardas",
+		"uzklausos": ["kuo tu vardu", "ar turi varda", "kaip tave vadinti", "koks tavo vardas"],
+		"atsakymas": ["Mano vardas ...."]
+		},
+		{"tag": "pagalba",
+		"uzklausos": ["ka tu gali", "kuo galiu paklausi", "ka tu zinai", "kuo galiu pasiklausti", "kokiu ziniu turi", "kuo taves galima paklausti", "kaip gali padeti", "kuo esi naudinga", "kokia informacija galiu gauti"],
+		"atsakymas": ["Manęs galite klausti apie ...."]
+		},
+		{"tag": "mano_tvarkarastis",
+		"uzklausos": ["noriu perziureti tvarkarasti", "kaip pamatyti mano tvarkarasti", "noriu pamatyti savo tvarkarasti", "kur galiu rasti savo tvarkarasti", "kur yra mano tvarkarastis", "kur mano paskaitu tvarkarastis", "kur rasti savo tvarkarasti", "kur galiu perziureti tvarkarasti"],
+		"atsakymas": ["Savo tvarkaraščius galite rasti prisijungę prie mano.vgtu.lt svetainės „Pradžia“ puslapyje, o pilną savo tvarkaraštį galite rasti „Pradžia“ puslapyje „Mano tvarkaraštis“ kortelėje paspaudę „Visas paskaitų tvarkaraštis“ arba nuėję į „Studijos > Paskaitų tvarkaraščiai“ skiltį ir pasirinkę „Mano šio semestro“ kortelę (adresu https://mano.vgtu.lt/timetable/site/search-form)"]
+		},
+		{"tag": "vgtu_naujenos",
+		"uzklausos": ["kas naujo ivyko universitete", "kas naujo vgtu", "noriu suzinoti kas vyksta vgtu", "noriu paziureti universiteto naujenas", "kokios paskutines vgtu naujenos", "kas vyksta universitete", "ar yra kas nors naujo universitete", "kur galiu rasti vgtu naujienas", "ar yra rodomos vgtu naujienos", "kur randasi naujienos apie studijas", "kaip pamatyti naujienas apie vgtu", "kur galiu pamatyti naujienas susijusias su vgtu", "ar yra svetaineje vgtu naujenos", "kas vyksta vgtu", "kaip suzinoti vgtu naujenas"],
+		"atsakymas": ["Naujienas galite rasti mano.vgtu.lt svetainės „Pradžia“ puslapyje, tik prisijungus iškart po tvarkaraščiais (adresu https://vilniustech.lt/vgtu-naujienu-portalas/naujienos/246059)"]
+		},
+		{"tag": "studiju_kalendorius",
+		"uzklausos": ["noriu paziureti studiju kalendoriu", "kas yra studiju kalendorius", "ar yra studiju kalendorius", "kur yra studiju kalendorius", "kur galiu rasti siu metu studiju kalendoriu", "kur rasti studiju kalendoriu", "kur galima rasti studiju kalendoriu", "kaip galiu pamatyti studiju kalendoriu"],
+		"atsakymas": ["Studijų kalendorių galite rasti vilniustech.lt svetainės „Studentams > Studijų kalendorius“ skiltyje (adresu https://vilniustech.lt/studentams/studiju-kalendorius/26685?lang=1)"]
+		},
+		{"tag": "grupes_tvarkarastis",
+		"uzklausos": ["noriu paziureti savo grupes tvarkarasti", "kur galiu rasti savo grupes tvarkarasti", "kur galiu paziureti grupes tvarkarasti", "kur yra mano grupes tvarkarastis", "kur galiu rasti grupiu tvarkarascius", "kaip rasti mano grupes tvarkarasti", "kur yra mano grupes tvarkarastis", "kur rasiu savo grupes tvarkarasti"],
+		"atsakymas": ["Grupių tvarkaraščius galite rasti prisijungę prie mano.vgtu.lt svetainės „Pradžia“ puslapyje „Mano tvarkaraštis“ kortelėje paspaudę „Visas paskaitų tvarkaraštis“, arba nuėję į „Studijos > Paskaitų tvarkaraščiai“ skiltį ir pasirinkę „Grupės“ kortelę (adresu https://mano.vgtu.lt/timetable/site/search-form)"]
+		},
+		{"tag": "studiju_programa",
+		"uzklausos": ["kur yra studiju programos aprasas", "kur galiu rasti mano studiju programa", "kur galiu rasti savo programos aprasa", "noriu rasti mano studiju programos aprasa", "kur galiu rasti studiju programa"],
+		"atsakymas": ["Savo studijuojamos programos aprašą galite rasti prisijungę prie mano.vgtu.lt svetainės „Studijos > Visa studijų programa“ skiltyje (adresu https://mano.vgtu.lt/program/site)"]
+		}
+]
+}
